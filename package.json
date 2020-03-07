@@ -1,6 +1,6 @@
 {
   "name": "@patarapolw/sql-easyquery",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": "Pacharapol Withayasakpunt <patarapolw@gmail.com> (https://polvcode.dev)",
@@ -11,7 +11,7 @@
     "tsconfig.json"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "access": "public"
   },
   "scripts": {
     "prepack": "tsc"
