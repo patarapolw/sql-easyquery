@@ -28,6 +28,17 @@ export class EasyQuery {
     return fn(d)
   }
 
+  parse (q: any): {
+    params: SQLParams,
+    statement: string,
+    bindings: Record<string, SQLDataType>
+  } {
+    if (typeof q === 'string') {
+      return this.parseQ(q)
+    }
+    return this.parseCond(q)
+  }
+
   parseQ (q: string): {
     params: SQLParams,
     statement: string,
